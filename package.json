@@ -23,14 +23,8 @@
     "eject": "react-scripts eject"
   },
   "jest": {
-    "testMatch": [
-      "**/?(*.)test.js?(x)"
-    ],
     "snapshotSerializers": [
       "enzyme-to-json/serializer"
-    ],
-    "setupFiles": [
-      "<rootDir>/jest-setup.js"
     ]
   },
   "devDependencies": {
