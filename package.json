@@ -1,17 +1,40 @@
 {
   "homepage": "https://github.com/meghnakhound/user-card-assignment.git",
   "name": "user-card",
-  "version": "0.1.0", 
+  "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "babel-jest": "^23.0.1",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "jest": "^23.0.1",
+    "jest-enzyme": "^6.0.1",
+    "jest-serializer-enzyme": "^1.0.0",
+    "office-ui-fabric-react": "^5.106.1-hotfix.1",
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
-    "react-scripts": "1.1.4"
+    "react-scripts": "1.1.4",
+    "react-test-renderer": "^16.4.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
+    "test": "jest",
     "eject": "react-scripts eject"
+  },
+  "jest": {
+    "testMatch": [
+      "**/?(*.)test.js?(x)"
+    ],
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ],
+    "setupFiles": [
+      "<rootDir>/jest-setup.js"
+    ]
+  },
+  "devDependencies": {
+    "enzyme-to-json": "^3.3.4",
+    "webpack": "^4.9.1"
   }
 }

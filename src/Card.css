@@ -1,0 +1,42 @@
+.main-card-container {
+    background: #ccc;
+    margin: auto;
+    width:35%;
+    margin: auto;
+    padding: 15px;
+}
+.txtfield-userid {
+    width: 30%;
+    float: left;
+}
+
+.btn-get-details {
+    margin-left: 10px;
+}
+
+.card {
+    margin-top: 10px;
+}
+
+.image-container {
+    background: #eee;
+}
+
+.image-container >img {
+    width: 96%;
+    padding: 10px;
+}
+
+.details-container {
+    position: relative;
+    margin-bottom: 0;
+    padding: 10px;;
+}
+
+.details-container >span:first-child {
+    float: left;
+}
+
+.details-container >span:nth-child(2) {
+    float: right;
+}
