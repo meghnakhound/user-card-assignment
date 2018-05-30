@@ -1,10 +1,12 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import Card from './Card.js';
-import toJson from 'enzyme-to-json';
+import renderer from 'react-test-renderer';
 
 /** Snapshot test */
 test('Card renders correctly', () => {
-const component = shallow(<Card />);
-expect(toJson(component)).toMatchSnapshot();
-})
+  const component = renderer
+    .create(<Card />)
+    .toJSON();
+  expect(component).toMatchSnapshot()
+});
